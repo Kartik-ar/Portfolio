@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Arora - Portfolio</title>
+    <link rel="icon" href="assets/kartik.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a202c',
+                        light: '#89CFF0',
+                        primary: '#0066b2'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+    <header class="bg-primary text-white p-6 flex items-center fade-in">
+        <img src="assets/kartik.png" alt="Profile Image" class="w-32 h-32 rounded-full mr-6">
+        <div class="flex-1">
+            <h1 class="text-4xl font-bold">Kartik Arora</h1>
+            <p class="text-lg">Chief Technical Officer (CTO) | Full Stack Developer | Data Scientist</p>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto my-8 p-6 bg-gray-800 text-white shadow-lg rounded-lg fade-in">
+        <h2 class="text-2xl font-semibold">About Me</h2>
+        <p class="mt-2">Experienced CTO with a strong background in full-stack development, data science, and cloud
+            computing.</p>
+        <p class="mt-2">Passionate about crafting innovative solutions and driving digital transformation at Dello+. 🌟
+            Committed to delivering top-tier software solutions that empower businesses to thrive in the digital age.
+        </p>
+        <p class="mt-2">Currently, I'm on an exciting journey of self-improvement and skill enhancement through the
+            Scaler Academy. 📖💡 Combining hands-on experience with cutting-edge knowledge to stay ahead in the
+            ever-evolving tech landscape.</p>
+        <p class="mt-2">Let's connect and explore opportunities to collaborate and learn together! 👥💬</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto my-8 p-6 bg-gray-800 text-white shadow-lg rounded-lg fade-in">
+        <h2 class="text-2xl font-semibold">Skills</h2>
+        <ul class="mt-2 grid grid-cols-2 gap-4">
+            <li class="fade-in">Python</li>
+            <li class="fade-in">Flutter</li>
+            <li class="fade-in">PostgreSQL</li>
+            <li class="fade-in">SQL</li>
+            <li class="fade-in">MongoDB</li>
+            <li class="fade-in">Docker</li>
+            <li class="fade-in">Kubernetes</li>
+            <li class="fade-in">MERN Stack</li>
+            <li class="fade-in">Fast API</li>
+            <li class="fade-in">Cloud Computing</li>
+            <li class="fade-in">Machine Learning</li>
+            <li class="fade-in">Data Analysis</li>
+            <li class="fade-in">AWS</li>
+            <li class="fade-in">DevOps</li>
+        </ul>
+    </section>
+
+    <section class="max-w-4xl mx-auto my-8 p-6 bg-gray-800 text-white shadow-lg rounded-lg fade-in">
+        <h2 class="text-2xl font-semibold">Experience</h2>
+        <div class="mt-4 fade-in">
+            <h3 class="text-xl font-semibold">Chief Technical Officer (CTO) - Drona</h3>
+            <p>Feb 2024 - Present</p>
+            <p>Designed and implemented a robust end-to-end system architecture, boosting scalability and performance by
+                30%. Led a team of developers to improve project execution, optimize tech stack, and enhance system
+                performance, reducing operational costs by 15%.</p>
+        </div>
+        <div class="mt-4 fade-in">
+            <h3 class="text-xl font-semibold">Software Engineer (Full Stack) - Dello+</h3>
+            <p>May 2022 - Sep 2024</p>
+            <p>Developed a responsive user interface using Flutter, improving engagement by 30%. Optimized MySQL queries
+                for a 25% performance boost and collaborated with the team to enhance scalability using cloud-based
+                solutions.</p>
+        </div>
+        <div class="mt-4 fade-in">
+            <h3 class="text-xl font-semibold">Apprenticeship - ARTH</h3>
+            <p>Sep 2020 - Aug 2021</p>
+            <p>Designed and implemented "ARTH 2020," a live technical training program integrating over 10 technologies.
+                Provided training in DSA, Competitive Programming, Big Data, DevOps, and Cloud Computing, preparing
+                students for IT challenges.</p>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto my-8 p-6 bg-gray-800 text-white shadow-lg rounded-lg fade-in">
+        <h2 class="text-2xl font-semibold">Projects</h2>
+        <ul class="mt-2 space-y-3">
+            <li class="fade-in"><a href="https://github.com/Kartik-ar/K8s_cluster" class="text-blue-400">Automate
+                    Multi-Node Kubernetes Cluster</a> - Provisioned EC2 instances and orchestrated containers using
+                Kubernetes to streamline cloud deployments.</li>
+            <li class="fade-in"><a
+                    href="https://www.linkedin.com/posts/kartik-arora-3b75ba197_righteducation-mlops-docker-activity-6841781786335436800-KM82/"
+                    class="text-blue-400">Automated Training of ML Models</a> - Configured Jenkins to monitor
+                repositories, built Docker images for web apps, and trained models using multiple algorithms to
+                determine the best-fit model based on accuracy.</li>
+            <li class="fade-in"><a
+                    href="https://www.linkedin.com/posts/kartik-arora-3b75ba197_worldrecordholder-training-internship-activity-6817878683735465985-pImj/"
+                    class="text-blue-400">Object Recognition Model</a> - Developed a real-time car detection model using
+                CNN that recognizes vehicle license plates and retrieves owner details from RTO APIs.</li>
+        </ul>
+    </section>
+
+    <footer class="text-center p-6 bg-primary text-white fade-in">
+        <p>Contact: kartikarora69@gmail.com | <a href="https://github.com/Kartik-ar" class="underline">GitHub</a> | <a
+                href="https://www.linkedin.com/in/kartik-arora-3b75ba197/" class="underline">LinkedIn</a></p>
+    </footer>
+</body>
+
+</html>
